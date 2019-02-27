@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <Button
+        android:id="@+id/connect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="connect"
+        app:layout_constraintBottom_toTopOf="@+id/dis_connect"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <Button
+        android:id="@+id/dis_connect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dis_connect"
+        app:layout_constraintBottom_toTopOf="@+id/send_msg"
+        app:layout_constraintTop_toBottomOf="@+id/connect" />
+
+
+    <Button
+        android:id="@+id/send_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="send_msg"
+        app:layout_constraintBottom_toTopOf="@+id/send_msg_stop"
+        app:layout_constraintTop_toBottomOf="@+id/dis_connect" />
+
+    <Button
+        android:id="@+id/send_msg_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="send_msg_stop"
+        app:layout_constraintBottom_toTopOf="@+id/check_server"
+        app:layout_constraintTop_toBottomOf="@+id/send_msg" />
+
+    <Button
+        android:id="@+id/check_server"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="check_server"
+        app:layout_constraintBottom_toTopOf="@+id/kill_server"
+        app:layout_constraintTop_toBottomOf="@+id/send_msg_stop" />
+
+    <Button
+        android:id="@+id/kill_server"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="kill_check_server"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/check_server" />
+
+</android.support.constraint.ConstraintLayout>
